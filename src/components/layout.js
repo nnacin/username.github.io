@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle='Natali Načinović' />
       <div
         style={{
           margin: `0 auto`,
@@ -34,10 +34,12 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <footer style={{ background: `lightblue` }}>
+          <div style={{ margin: `0px auto`, maxWidth: `960px`, padding: `1.45rem 1.0875rem` }}>
+            © {new Date().getFullYear()}, Built with
+            {` `}
+            <a href="https://www.gatsbyjs.org">Gatsby</a>
+          </div>
         </footer>
       </div>
     </>
