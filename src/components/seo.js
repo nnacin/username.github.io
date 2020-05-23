@@ -32,7 +32,7 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title='test'
+      title="Nat's world"
       titleTemplate={`%s`}
       meta={[
         {
