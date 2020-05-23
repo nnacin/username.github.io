@@ -1,5 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
+import pusheenComputer from '../images/pusheen-computer.jpg'
+import pusheenReading from '../images/pusheen-reading.jpg'
+import pusheenEating from '../images/pusheen-eating.jpg'
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -8,14 +11,20 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <p>In my free time I like reading books, watching movies & series.</p>
-    <p>Eating. (put pusheen pictures)</p>
-    <p>From time to time I code and leran new things</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <h1>Hola!</h1>
+    <p>My name is Natali. I am a 27 year-old Croatian girl living in the sunny and warm Barcelona, 🇪🇸.
+      By day, I am a frontend developer.
+    </p>
+    <p>In my free time I like reading books, watching movies & series, travelling.
+      I have to admit I am also a  foodie.
+    </p>
+    <p>From time to time, I code and learn new things.
+      Nice to meet you!
+    </p>
+    <div style={{ display: 'flex', flexWrap: 'wrap'}}>
+      {/* <img style={{ flex: 1, maxWidth: '50%' }} src={pusheenComputer} />
+      <img style={{ flex: 1, maxWidth: '50%'}} src={pusheenEating} /> */}
+      <img style={{ flex: 1, maxWidth: '50%' }} src={pusheenReading} />
     </div>
     <a href="https://github.com/nnacin">Github</a>
     <br />
