@@ -10,6 +10,5 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Find Comment
-        uses: peter-evans/find-comment@v1
-      - run: |
+        run: |
           echo ${{ github.event }}
