@@ -10,7 +10,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Find Comment
-        if: github.event.issue.pull_request
         uses: peter-evans/find-comment@v1
         id: fc
         with:
