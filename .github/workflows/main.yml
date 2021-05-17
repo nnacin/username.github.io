@@ -13,7 +13,7 @@ jobs:
         uses: peter-evans/find-comment@v1
         id: fc
         with:
-          issue-number: 1
+          issue-number: ${{ github.event.number }}
           body-includes: invalidate
       - run: |
           echo ${{ steps.fc.outputs.comment-id }}
